@@ -1,6 +1,6 @@
-name: My First GitHub Actions
+name: Multiplication Tests
 
-# on: [push]
+on: [push]
 
 jobs:
   build:
@@ -22,7 +22,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest
 
-    - name: Run tests
+    - name: Run tests for multiplication
       run: |
         cd src
-        python -m pytest addition.py
+        python -m pytest multiplication.py
