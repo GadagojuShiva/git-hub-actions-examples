@@ -25,16 +25,3 @@ To run the tests for multiplication, you can use the following GitHub Actions wo
 - Workflow file: [.github/workflows/multiplication-action.yml](.github/workflows/multiplication-action.yml)
 
 This workflow is triggered on each push to the repository.
-
-## Getting Started
-
-1. Clone this repository to your local machine:
-
-   ```bash
-   git clone https://github.com/your-username/your-repository.git
-   ```
-2. Navigate to the src directory:
-   
-  ```bash
-    cd your-repository/src
-  ```
