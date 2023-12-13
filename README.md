@@ -1,43 +1,40 @@
-# My First GitHub Actions
+# My Python Math Operations Project
 
-This repository contains a simple Python script for addition (`addition.py`) along with a GitHub Actions workflow (`first-action.yml`) that automates the testing process using pytest.
+This project includes Python scripts for basic math operations (addition and multiplication) along with GitHub Actions workflows for testing each operation.
 
-## Contents
+## Addition
 
-- [Introduction](#introduction)
-- [Usage](#usage)
-- [Workflow Overview](#workflow-overview)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
+The `addition.py` script provides a simple function for addition and a corresponding test file.
 
-## Introduction
+### Running Tests for Addition
 
-The `addition.py` script defines an `add` function for basic addition and includes a test function (`test_add`) using the `pytest` testing framework.
+To run the tests for addition, you can use the following GitHub Actions workflow:
 
-## Usage
+- Workflow file: [.github/workflows/addition-action.yml](.github/workflows/addition-action.yml)
 
-To use the addition script, you can import the `add` function into your own Python code or run the tests using the provided GitHub Actions workflow.
+This workflow is triggered on each push to the repository.
 
-## Workflow Overview
+## Multiplication
 
-The GitHub Actions workflow (`first-action.yml`) is triggered on each push to the repository. Here's a summary of the workflow:
+The `multiplication.py` script provides a simple function for multiplication and a corresponding test file.
 
-1. **Checkout**: Checks out the repository.
-2. **Set up Python**: Sets up a Python environment with specified versions (3.8 and 3.9).
-3. **Install dependencies**: Upgrades pip and installs the `pytest` library.
-4. **Run tests**: Changes to the `src` directory and runs the tests using the `pytest` command on the `addition.py` file.
+### Running Tests for Multiplication
 
-## Testing
+To run the tests for multiplication, you can use the following GitHub Actions workflow:
 
-The `test_add` function in `addition.py` has two simple test cases. The GitHub Actions workflow automatically runs these tests on each push, providing feedback on the success or failure of the tests.
+- Workflow file: [.github/workflows/multiplication-action.yml](.github/workflows/multiplication-action.yml)
 
-## Contributing
+This workflow is triggered on each push to the repository.
 
-Feel free to contribute by opening issues or pull requests. Follow the standard GitHub flow for contributing.
+## Getting Started
 
-1. Fork the repository.
-2. Create a new branch.
-3. Make your changes.
-4. Open a pull request.
+1. Clone this repository to your local machine:
 
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+   ```
+2. Navigate to the src directory:
+   
+  ```bash
+    cd your-repository/src
+  ```
